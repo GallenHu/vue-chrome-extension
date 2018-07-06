@@ -1,0 +1,24 @@
+{
+  "name": "VVV",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A Vue Project",
+  "homepage_url": "https://github.com",
+  "icons": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+  },
+  "browser_action": {
+      "default_title": "VVV",
+      "default_icon": "logo.png",
+      "default_popup": "index.html"
+  },
+  "omnibox": {
+      "keyword": "VVV"
+  },
+  "permissions": [
+      "http://*/*",
+      "https://*/*"
+  ]
+}
