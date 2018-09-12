@@ -38,8 +38,9 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
       '  Tip: built files are meant to be served over an HTTP server.\n' +
       '  Opening index.html over file:// won\'t work.\n'
     ))
+    
+    // copy static files
+    cp('-f', 'manifest.json', 'dist/')
+    cp('-f', 'logo.png', 'dist/')
   })
 })
-
-cp('-f', 'manifest.json', 'dist/')
-cp('-f', 'logo.png', 'dist/')
